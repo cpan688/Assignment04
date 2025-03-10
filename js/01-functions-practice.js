@@ -28,7 +28,7 @@ do {
     choice = parseInt(choice);
     if (isNaN(choice) || ((choice >= 1 && choice <= 4) == false)) {
         console.log("Invalid choice - program terminated.");
-        // document.writeln("Invalid choice - program terminated.");
+        document.writeln("Invalid choice - program terminated.");
         process.exit(1);
     }
 
@@ -38,7 +38,7 @@ do {
             inputNumber1 = parseFloat(prompt("Enter a number: "));
             if (isNaN(inputNumber1)) {                                  // Validate if the user has entered a valid number 
                 console.log("Invalid number - program terminated.");
-                // document.writeln("Invalid number - program terminated.");
+                document.writeln("Invalid number - program terminated.");
                 process.exit(1);
             } else {                                                    // log the result as "Half of 5 is 2.5."
                 result = `Half of ${inputNumber1} is ${halfNumber(inputNumber1)}.`;
@@ -50,7 +50,7 @@ do {
             inputNumber1 = parseFloat(prompt("Enter a number: "));
             if (isNaN(inputNumber1)) {                                  // Validate if the user has entered a valid number 
                 console.log("Invalid number - program terminated.");
-                // document.writeln("Invalid number - program terminated.");
+                document.writeln("Invalid number - program terminated.");
                 process.exit(1);
             } else {                                                     // log the result as "The result of squaring the number 3 is 9."
                 result = `The result of squaring the number ${inputNumber1} is ${squareNumber(inputNumber1)}.`;
@@ -64,7 +64,7 @@ do {
             inputNumber2 = parseFloat(prompt("Enter the second number: "));
             if ((isNaN(inputNumber1)) || (isNaN(inputNumber2))) {        // Validate if the user has entered a valid number 
                 console.log("Invalid number - program terminated.");
-                // document.writeln("Invalid number - program terminated.");
+                document.writeln("Invalid number - program terminated.");
                 process.exit(1);
             } else {                                                    // log the result as "2 is 50% of 4."
                 result = `${inputNumber1} is ${(percentOf(inputNumber1, inputNumber2)).toFixed(0)}% of ${inputNumber2}.`;
@@ -77,7 +77,7 @@ do {
             inputNumber2 = parseFloat(prompt("Enter the second number: "));
             if ((isNaN(inputNumber1)) || (isNaN(inputNumber2))) {        // Validate if the user has entered a valid number 
                 console.log("Invalid number - program terminated.");
-                // document.writeln("Invalid number - program terminated.");
+                document.writeln("Invalid number - program terminated.");
                 process.exit(1);
             } else {                                                    // log the result as "2 is the modulus of 4 and 10."
                 result = `${findModulus(inputNumber1, inputNumber2)} is the modulus of ${inputNumber2} and ${inputNumber1}.`;
@@ -86,6 +86,6 @@ do {
         }
 
         console.log(result);
-        // document.writeln(result);
+        document.writeln(result);
 
     } while (!done)
